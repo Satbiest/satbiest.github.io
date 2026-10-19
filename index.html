@@ -1,1 +1,273 @@
-
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#070b14">
+  <title>Satya Bintang Esa Resiadi | Data &amp; Intelligence</title>
+  <meta name="description" content="Portfolio of Satya Bintang Esa Resiadi, a Statistics graduate from UNS. Data Analytics, Data Science, Business Intelligence, dashboards, and AI solutions.">
+  <meta property="og:title" content="Satya Bintang Esa Resiadi | Data & Intelligence">
+  <meta property="og:description" content="Turning complex data into strategic insights and meaningful business decisions.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23070b14'/%3E%3Cpath d='M14 45V31h8v14zm14 0V20h8v25zm14 0V12h8v33z' fill='%2355cfff'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+  <!-- CSS and JavaScript are included in this file. Only the resume uses a local asset. -->
+  <script>
+    try { if (localStorage.getItem('satya-theme') === 'light') document.documentElement.dataset.theme = 'light'; } catch (_) {}
+  </script>
+  <style>
+    :root{--bg:#070b14;--surface:#0d1421;--surface2:#101b2b;--text:#eef3ff;--muted:#a3b0c7;--line:#202d42;--accent:#55cfff;--blue:#2878ff;--soft:rgba(85,207,255,.09);--nav:rgba(7,11,20,.88);--shadow:0 24px 80px #0004}
+    [data-theme="light"]{--bg:#f6f8fc;--surface:#fff;--surface2:#eaf0f8;--text:#101c32;--muted:#53637b;--line:#d4deec;--accent:#006b9b;--blue:#155be0;--soft:rgba(0,107,155,.07);--nav:rgba(246,248,252,.94);--shadow:0 24px 80px #19345b12}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:100px}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;font-size:15px;line-height:1.75;-webkit-font-smoothing:antialiased}body.modal-open{overflow:hidden}
+    a{color:inherit;text-decoration:none}button,input,textarea{font:inherit}button,a,input,textarea,summary{-webkit-tap-highlight-color:transparent}button{cursor:pointer}button:disabled{cursor:default}button{color:inherit}img,svg{max-width:100%}a,button,input,textarea,summary{outline-offset:5px}:focus-visible{outline:2px solid var(--accent)}::selection{background:#2878ff;color:white}p,h1,h2,h3{margin-top:0}p{color:var(--muted)}h1,h2,h3{line-height:1.2;letter-spacing:-.045em}h2{font-size:clamp(30px,4.2vw,48px);font-weight:600;margin-bottom:18px}h3{font-size:21px;font-weight:600}button{border:0}a:hover{color:var(--accent)}[hidden]{display:none!important}
+    .container{width:min(1120px,calc(100% - 48px));margin-inline:auto}.section{padding:104px 0;border-top:1px solid var(--line)}.eyebrow{display:flex;align-items:center;gap:10px;color:var(--accent);font-size:11px;font-weight:600;letter-spacing:.17em;text-transform:uppercase;margin-bottom:20px}.eyebrow:before{content:"";width:20px;height:1px;background:var(--accent)}.section-head{display:flex;justify-content:space-between;align-items:end;gap:32px;margin-bottom:42px}.section-head p{max-width:330px;margin:0;font-size:14px}.section-head h2{margin:0}.accent{color:var(--accent)}.mono{font-family:ui-monospace,SFMono-Regular,Consolas,monospace}.tag{display:inline-block;padding:4px 10px;border:1px solid var(--line);border-radius:5px;font-size:11px;color:var(--muted);line-height:1.6}.tags{display:flex;gap:7px;flex-wrap:wrap}.btn{display:inline-flex;justify-content:center;align-items:center;gap:10px;min-height:48px;padding:11px 21px;border-radius:8px;font-size:13px;font-weight:600;border:1px solid var(--line);background:var(--surface);color:var(--text);transition:transform .2s,border-color .2s,background .2s}.btn:hover{transform:translateY(-2px);border-color:var(--accent);color:var(--text)}.btn-primary{background:var(--blue);border-color:var(--blue);color:#fff;box-shadow:0 5px 28px #2878ff26}.btn-primary:hover{background:#1966ee;color:white}.icon-btn{display:grid;place-items:center;width:40px;height:40px;border:1px solid var(--line);border-radius:8px;background:var(--surface);font-size:18px}.icon-btn:hover{border-color:var(--accent);color:var(--accent)}.skip{position:fixed;top:-100px;left:20px;z-index:100;background:var(--blue);color:white;padding:10px 16px}.skip:focus{top:12px}
+    /* Fixed navigation with a collapsible menu on smaller screens. */
+    .navbar{position:fixed;inset:0 0 auto;z-index:30;background:var(--nav);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.nav-inner{display:flex;align-items:center;justify-content:space-between;height:78px;gap:24px}.brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:-.04em;font-size:19px}.brand-mark{display:flex;gap:3px;align-items:end;height:22px;transform:skewY(-10deg)}.brand-mark span{display:block;width:5px;border-radius:2px;background:var(--accent)}.brand-mark span:nth-child(1){height:10px}.brand-mark span:nth-child(2){height:16px}.brand-mark span:nth-child(3){height:22px}.brand small{font-weight:400;color:var(--muted)}.nav-links{display:flex;gap:25px;align-items:center}.nav-links a{font-size:12px;color:var(--muted)}.nav-links a:hover,.nav-links a[aria-current="location"]{color:var(--text)}.nav-actions{display:flex;align-items:center;gap:10px}.menu-toggle{display:none}
+    /* Hero: blue glow and grid inspired by the reference, with no paid assets. */
+    .hero{position:relative;isolation:isolate;padding:156px 0 0;overflow:hidden;text-align:center}.hero:before{content:"";position:absolute;z-index:-2;inset:0;background:radial-gradient(ellipse 48% 38% at 50% 20%,#1767e51b,transparent 90%),radial-gradient(ellipse 50% 25% at 50% 86%,#2878ff1a,transparent 90%)}.hero:after{content:"";position:absolute;z-index:-1;inset:0 0 30%;background-image:radial-gradient(var(--line) 1px,transparent 1px);background-size:24px 24px;mask-image:linear-gradient(transparent,#0007,transparent);pointer-events:none}.hero-badge{display:inline-flex;align-items:center;gap:9px;border:1px solid var(--line);border-radius:30px;background:var(--surface);padding:6px 13px;font-size:10px;letter-spacing:.1em;color:var(--muted);text-transform:uppercase}.status-dot{width:6px;height:6px;border-radius:50%;background:var(--accent);box-shadow:0 0 12px #55cfff88}.hero h1{font-size:clamp(44px,7.6vw,88px);line-height:1.07;font-weight:600;margin:26px 0 22px;letter-spacing:-.065em}.gradient{background:linear-gradient(110deg,var(--text),var(--accent) 65%,#698aff);background-clip:text;-webkit-background-clip:text;color:transparent}.roles{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:13px}.roles b{font-weight:400;color:var(--line)}.hero-copy{font-size:17px;max-width:570px;margin:24px auto 26px;line-height:1.75}.hero-buttons{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}.hero-meta{display:flex;justify-content:center;gap:23px;margin:22px 0 44px;color:var(--muted);font-size:11px}.hero-meta i{color:var(--accent);margin-right:5px}
+    .insight{max-width:850px;margin:auto;text-align:left;border:1px solid var(--line);border-radius:13px 13px 0 0;background:var(--surface);box-shadow:var(--shadow);overflow:hidden}.insight-top{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding:13px 22px;font-size:10px;color:var(--muted);gap:12px}.window-dots{display:flex;gap:5px}.window-dots span{width:6px;height:6px;border-radius:50%;background:var(--line)}.insight-body{display:grid;grid-template-columns:1.3fr 1fr;gap:28px;padding:26px 28px 24px}.chart-label{display:flex;justify-content:space-between;gap:10px;font-size:10px;color:var(--muted)}.chart-label strong{color:var(--text);font-weight:500}.data-chart{display:block;width:100%;height:110px;margin-top:10px}.metric-list{display:flex;flex-direction:column;justify-content:space-between;gap:12px}.metric{display:flex;align-items:center;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding-bottom:10px}.metric:last-child{border:0;padding-bottom:0}.metric strong{font-size:25px;font-weight:500;letter-spacing:-.06em}.metric span{font-size:10px;color:var(--muted);text-align:right}.company-strip{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:32px 0 38px;color:var(--muted);font-weight:600;font-size:15px}.company-strip span:first-child{font-size:10px;font-weight:400;letter-spacing:.1em;text-transform:uppercase}.company-strip em{font-style:normal;font-weight:400}
+    /* Profile and skills. */
+    .about-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:90px}.about-copy{font-size:16px}.about-copy p:last-child{font-size:14px}.education{padding:28px;background:linear-gradient(140deg,var(--soft),var(--surface));border:1px solid var(--line);border-radius:12px}.education i{color:var(--accent);font-size:28px}.education h3{margin:18px 0 8px;font-size:20px}.education p{font-size:13px;margin-bottom:18px}.education-bottom{display:flex;justify-content:space-between;align-items:end;border-top:1px solid var(--line);padding-top:18px}.education-bottom strong{font-size:32px;line-height:1;letter-spacing:-.05em}.education-bottom small{color:var(--muted);font-size:11px}.skills-title{font-size:12px;letter-spacing:.09em;text-transform:uppercase;margin:48px 0 18px;color:var(--muted)}.skills-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.skill{border-top:1px solid var(--line);padding:22px 0}.skill i{font-size:21px;color:var(--accent)}.skill h3{font-size:14px;letter-spacing:-.02em;margin:14px 0}.skill p{font-size:12px;line-height:1.9;margin:0}.skill .tags{gap:6px}
+    /* Experience uses native details elements to remain usable without JavaScript. */
+    .experience-list{border-top:1px solid var(--line)}.experience{border-bottom:1px solid var(--line)}.experience summary{list-style:none;display:grid;grid-template-columns:60px 1fr auto 28px;gap:22px;align-items:center;padding:27px 4px;cursor:pointer}.experience summary::-webkit-details-marker{display:none}.company-icon{width:47px;height:47px;background:var(--soft);border:1px solid var(--line);border-radius:10px;display:grid;place-items:center;font-size:15px;font-weight:700;color:var(--accent)}.experience h3{font-size:18px;margin:0 0 6px;letter-spacing:-.03em}.job-role{font-size:12px;color:var(--muted);line-height:1.5}.job-date{font-size:11px;color:var(--muted)}.expand{font-size:20px;color:var(--muted);text-align:center}.expand:before{content:"+"}.experience[open] .expand:before{content:"−"}.job-body{padding:0 35px 27px 86px;max-width:890px}.job-body ul{padding-left:18px;color:var(--muted);font-size:13px;margin:0 0 17px}.job-body li+li{margin-top:8px}.job-body strong{color:var(--text);font-weight:500}
+    /* Project cards and illustrative previews built with CSS. */
+    .filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:27px}.filter{padding:8px 15px;border:1px solid var(--line);border-radius:6px;background:transparent;color:var(--muted);font-size:12px}.filter[aria-pressed="true"]{background:var(--soft);border-color:var(--accent);color:var(--accent)}.projects-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:20px}.project{grid-column:span 2;display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden;transition:transform .25s,border-color .25s}.project:first-child,.project:nth-child(2){grid-column:span 3}.project:hover{border-color:var(--accent);transform:translateY(-4px)}.project-visual{height:170px;padding:24px;background:radial-gradient(ellipse at top right,#2878ff14,transparent 75%),var(--surface2);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}.visual-label{position:absolute;right:10px;bottom:7px;font-size:8px;color:var(--muted);letter-spacing:.05em}.mini-window{width:100%;max-width:310px;border:1px solid var(--line);border-radius:7px;background:var(--surface);padding:13px;box-shadow:0 12px 20px #0001}.mini-title{font-size:9px;color:var(--muted);display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}.mini-title i{color:var(--accent);font-size:14px}.chat-line{background:var(--soft);border-radius:5px;padding:7px 9px;font-size:9px;color:var(--muted);margin:7px 0}.chat-line:last-child{margin-left:22px;border-left:2px solid var(--accent);color:var(--text)}.bars{height:65px;display:flex;align-items:end;gap:7px;border-bottom:1px solid var(--line)}.bars span{flex:1;height:var(--h);background:linear-gradient(var(--accent),var(--blue));border-radius:3px 3px 0 0;opacity:.8}.mini-kpis{display:flex;gap:8px;margin-bottom:10px}.mini-kpis span{flex:1;height:21px;background:var(--soft);border:1px solid var(--line);border-radius:3px}.network{display:flex;align-items:center;gap:9px;color:var(--accent)}.network i{padding:13px;border:1px solid var(--line);background:var(--surface);border-radius:9px;font-size:23px}.network b{font-weight:400;font-size:15px}.donut{width:85px;height:85px;border-radius:50%;background:conic-gradient(var(--accent) 0 48.2%,var(--line) 48.2%);display:grid;place-items:center;margin:0 auto}.donut:before{content:"48.2%";display:grid;place-items:center;width:61px;height:61px;border-radius:50%;background:var(--surface2);font-size:13px;color:var(--text)}.project-content{padding:23px;display:flex;flex-direction:column;flex:1}.project-category{font-size:9px;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);margin-bottom:11px}.project h3{font-size:19px;margin:0 0 11px;line-height:1.35}.project p{font-size:12px;margin-bottom:18px}.project .tags{margin-top:auto;margin-bottom:20px}.project-link{display:flex;justify-content:space-between;align-items:center;width:100%;border-top:1px solid var(--line);padding:15px 0 0;background:none;text-align:left;font-size:11px;color:var(--text)}.project-link:hover{color:var(--accent)}.project-note{font-size:11px;margin:22px 0 0}
+    /* Awards, contact, and footer. */
+    .awards-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.award{position:relative;padding:27px 23px;border:1px solid var(--line);border-radius:10px;background:var(--surface)}.award i{font-size:24px;color:#eac47d}.award .year{position:absolute;right:23px;top:27px;font-size:11px;color:var(--muted)}.award .place{font-size:10px;color:var(--accent);letter-spacing:.05em;text-transform:uppercase;margin:20px 0 9px}.award h3{font-size:17px;line-height:1.45;letter-spacing:-.025em;margin-bottom:9px}.award p{font-size:11px;margin:0}.more-awards{margin-top:22px;border-bottom:1px solid var(--line);padding-bottom:18px}.more-awards summary{cursor:pointer;color:var(--muted);font-size:12px}.more-awards ul{color:var(--muted);font-size:12px;columns:2;padding-left:20px}.more-awards li{break-inside:avoid;margin:0 20px 10px 0}.contact{background:radial-gradient(ellipse at 10% 0,#2878ff0c,transparent 65%)}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:95px}.contact-copy>p{font-size:14px}.contact-links{display:grid;gap:18px;margin-top:30px}.contact-link{display:flex;align-items:center;gap:14px;font-size:13px}.contact-link i{font-size:19px;color:var(--accent);width:38px;height:38px;display:grid;place-items:center;border:1px solid var(--line);border-radius:8px}.contact-link small{display:block;font-size:10px;color:var(--muted)}.contact-form{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:28px}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:15px}.field{margin-bottom:16px}.field label{display:block;font-size:11px;margin-bottom:6px;color:var(--muted)}input,textarea{width:100%;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--text);padding:10px 12px;font-size:13px}textarea{min-height:117px;resize:vertical}input::placeholder,textarea::placeholder{color:var(--muted);opacity:.65}.contact-form .btn{width:100%}.form-note{font-size:10px;margin:12px 0 0;line-height:1.7}.form-status{font-size:12px;color:var(--accent);margin:12px 0 0}.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:30px 0;font-size:10px;color:var(--muted)}.socials{display:flex;align-items:center;gap:16px;font-size:17px}.footer-inner p{margin:0}.back-top{display:flex;align-items:center;gap:7px;font-size:10px}
+    /* Native dialog: Escape, focus management, and a keyboard-accessible close button. */
+    dialog{color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:33px;width:min(600px,calc(100% - 32px));max-height:85dvh;box-shadow:var(--shadow)}dialog::backdrop{background:#02050dc9;backdrop-filter:blur(7px)}.dialog-top{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-bottom:23px}.dialog-top .eyebrow{margin:0}.dialog-title{font-size:29px;margin-bottom:16px}.dialog-content{font-size:14px;color:var(--muted)}.dialog-content ul{padding-left:20px}.dialog-content li{margin-bottom:9px}.dialog-content strong{color:var(--text);font-weight:500}.dialog-foot{font-size:11px;border-top:1px solid var(--line);padding-top:17px;margin-top:22px}.reveal{opacity:1;transform:none}.reveal.pending{opacity:0;transform:translateY(20px);transition:opacity .6s,transform .6s}.reveal.visible{opacity:1;transform:none}
+    @media(min-width:761px){.nav-links{display:flex!important}}
+    @media(max-width:1000px){.nav-links{gap:17px}.about-grid{gap:40px}.contact-grid{gap:40px}.skills-grid{grid-template-columns:repeat(2,1fr)}.project{grid-column:span 3}.project:last-child{grid-column:span 6}.company-strip{justify-content:center;gap:30px}.company-strip span:first-child{width:100%;text-align:center}}
+    @media(max-width:760px){.container{width:calc(100% - 36px)}.nav-inner{height:68px}.brand{font-size:17px}.menu-toggle{display:grid}.nav-links{display:none;position:absolute;top:67px;left:0;right:0;background:var(--bg);border-bottom:1px solid var(--line);padding:15px 24px 24px;flex-direction:column;align-items:stretch;gap:0}.nav-links.is-open{display:flex}.nav-links a{padding:12px;font-size:14px}.hero{padding-top:122px}.hero h1{font-size:clamp(42px,9vw,65px)}.hero-copy{font-size:15px;max-width:430px}.roles{font-size:11px;gap:8px}.hero-meta{gap:14px;font-size:10px;margin-bottom:36px}.insight-body{padding:20px;gap:22px}.metric strong{font-size:21px}.metric span{font-size:9px}.insight-top{padding:11px 16px;font-size:9px}.section{padding:72px 0}.section-head{display:block;margin-bottom:30px}.section-head p{margin-top:17px;max-width:430px}.about-grid,.contact-grid{grid-template-columns:1fr;gap:30px}.education{padding:24px}.experience summary{grid-template-columns:43px 1fr 20px;gap:13px;padding:22px 0}.company-icon{width:39px;height:39px;font-size:12px}.experience h3{font-size:15px}.job-date{grid-column:2;grid-row:2;font-size:10px;margin-top:-7px}.expand{grid-column:3;grid-row:1}.job-role{font-size:11px}.job-body{padding:0 4px 24px 56px}.awards-grid{grid-template-columns:repeat(2,1fr)}.more-awards ul{columns:1}.footer-inner{flex-wrap:wrap}.footer-inner p{width:100%}.back-top{margin-left:auto}.skills-title{margin-top:34px}}
+    @media(max-width:480px){.hero h1{font-size:43px;letter-spacing:-.06em}.roles{max-width:280px;margin:auto;line-height:1.8;gap:0 10px}.roles b:last-of-type{display:none}.roles span:last-child{width:100%}.hero-buttons .btn{padding:10px 15px}.hero-meta{flex-wrap:wrap;gap:6px 15px}.insight-body{grid-template-columns:1fr;gap:18px}.metric-list{flex-direction:row;gap:8px;padding-top:16px;border-top:1px solid var(--line)}.metric{display:block;border:0;padding:0;flex:1}.metric strong{font-size:22px;display:block}.metric span{display:block;text-align:left;font-size:8px;margin-top:3px;line-height:1.7}.chart-label{font-size:9px}.company-strip{font-size:12px;gap:16px 24px}.skills-grid{gap:12px 20px}.skill h3{font-size:13px}.skill .tag{font-size:10px;padding:3px 7px}.project,.project:first-child,.project:nth-child(2),.project:last-child{grid-column:span 6}.project-visual{height:155px}.awards-grid{grid-template-columns:1fr}.award{padding:23px}.award .place{margin-top:12px}.form-row{grid-template-columns:1fr;gap:0}.contact-form{padding:22px}.contact-link{font-size:12px}dialog{padding:24px}.dialog-title{font-size:24px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}.reveal.pending{opacity:1;transform:none}}
+    @media print{.navbar,.hero-buttons,.filters,.project-link,.contact-form,.back-top,.hero:after,.hero:before{display:none!important}body{--bg:#fff;--surface:#fff;--surface2:#f5f5f5;--text:#111;--muted:#444;--line:#ddd;--accent:#006b9b;background:#fff;color:#111}.hero{padding-top:30px}.section{padding:32px 0}.reveal.pending{opacity:1;transform:none}.project,.award{break-inside:avoid}.gradient{background:none;color:#111}}
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip">Skip to content</a>
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a class="brand" href="#home" aria-label="Satya, home"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>satya<small>.data</small></a>
+      <nav id="nav-links" class="nav-links" aria-label="Main navigation">
+        <a href="#home" aria-current="location">Home</a><a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#awards">Awards</a><a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" id="theme-toggle" aria-label="Switch to light theme" type="button"><i class="ri-sun-line" aria-hidden="true"></i></button>
+        <button class="icon-btn menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links" type="button"><i class="ri-menu-3-line" aria-hidden="true"></i></button>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero-badge"><span class="status-dot" aria-hidden="true"></span>Data. Clarity. Impact.</div>
+        <h1 id="hero-title">Satya Bintang<br><span class="gradient">Esa Resiadi.</span></h1>
+        <div class="roles"><span>Data Analyst</span><b aria-hidden="true">/</b><span>Data Scientist</span><b aria-hidden="true">/</b><span>Business Intelligence Specialist</span></div>
+        <p class="hero-copy">Turning complex data into <span style="color:var(--text)">strategic insights</span> and meaningful business decisions.</p>
+        <div class="hero-buttons"><a class="btn btn-primary" href="#projects">View Projects <i class="ri-arrow-right-up-line" aria-hidden="true"></i></a><a class="btn" href="./assets/resume-satya.pdf" download="CV-Satya-Bintang-Esa-Resiadi.pdf">Download CV <i class="ri-download-2-line" aria-hidden="true"></i></a></div>
+        <div class="hero-meta"><span><i class="ri-map-pin-line" aria-hidden="true"></i>Demak, Indonesia</span><span><i class="ri-graduation-cap-line" aria-hidden="true"></i>Statistics graduate · UNS</span></div>
+        <div class="insight" aria-label="Scope of work summarized from the resume">
+          <div class="insight-top"><span class="window-dots" aria-hidden="true"><span></span><span></span><span></span></span><span class="mono">analytics / impact_overview</span><span>01 — 05</span></div>
+          <div class="insight-body">
+            <div><div class="chart-label"><strong>Data → Insight → Impact</strong><span>Illustrative analytics workflow</span></div>
+              <svg class="data-chart" viewBox="0 0 400 110" role="img" aria-label="Decorative chart illustrating the analytics process, not actual performance data">
+                <defs><linearGradient id="chartFill" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#2878ff" stop-opacity=".24"/><stop offset="1" stop-color="#2878ff" stop-opacity="0"/></linearGradient></defs>
+                <g stroke="currentColor" opacity=".09"><path d="M0 20H400M0 55H400M0 90H400M40 0V110M120 0V110M200 0V110M280 0V110M360 0V110"/></g>
+                <path d="M0 95L35 87L70 92L105 67L140 72L175 56L210 61L245 32L280 39L315 18L350 24L395 7V110H0Z" fill="url(#chartFill)"/>
+                <path d="M0 95L35 87L70 92L105 67L140 72L175 56L210 61L245 32L280 39L315 18L350 24L395 7" fill="none" stroke="#55bfff" stroke-width="2.5" stroke-linejoin="round"/><circle cx="395" cy="7" r="4" fill="#55cfff"/>
+              </svg>
+              <div class="chart-label mono"><span>COLLECT</span><span>ANALYZE</span><span>COMMUNICATE</span></div>
+            </div>
+            <div class="metric-list"><div class="metric"><strong>140K+</strong><span>Policyholder records analyzed<br>BRI Life</span></div><div class="metric"><strong>800+</strong><span>Report pages used for RAG<br>Telkom Indonesia</span></div><div class="metric"><strong>110</strong><span>Talents covered by KPI monitoring<br>Telkom Indonesia</span></div></div>
+          </div>
+        </div>
+        <div class="company-strip" aria-label="Organizations where I completed internships"><span>Experience with</span><span>BRI <em>Life</em></span><span>Telkom <em>Indonesia</em></span><span>Technocolabs</span><span>GDI</span><span>kudata.id</span></div>
+      </div>
+    </section>
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="eyebrow">01 / About me</div>
+        <div class="about-grid reveal">
+          <div class="about-copy"><h2 id="about-title">Driven by curiosity.<br><span class="accent">Grounded in data.</span></h2><p>I am a Statistics graduate from Sebelas Maret University, passionate about Data Analytics, Data Science, and Business Intelligence.</p><p>From preparing datasets to building dashboards and predictive models, I connect technical analysis with business needs. My experience in insurance, telecommunications, and digital platforms shapes how I communicate findings that are clear, relevant, and actionable.</p><a class="btn" href="https://www.linkedin.com/in/satyaresiadi/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn <i class="ri-arrow-right-up-line" aria-hidden="true"></i></a></div>
+          <div class="education"><i class="ri-graduation-cap-line" aria-hidden="true"></i><h3>Sebelas Maret University</h3><p>Bachelor of Statistics<br>Aug 2022 – Jul 2026</p><div class="tags"><span class="tag">Statistical modeling</span><span class="tag">Deep learning</span><span class="tag">Teaching Assistant · 2024</span></div><div class="education-bottom"><div><strong>3.54<span style="font-size:16px;color:var(--muted)"> / 4.00</span></strong><br><small>Grade Point Average</small></div><span class="mono accent" style="font-size:11px">UNS '26</span></div></div>
+        </div>
+        <h3 class="skills-title">The toolkit / Skills</h3>
+        <div class="skills-grid reveal">
+          <article class="skill"><i class="ri-code-s-slash-line" aria-hidden="true"></i><h3>Programming &amp; Database</h3><div class="tags"><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">R</span><span class="tag">MySQL</span><span class="tag">PostgreSQL</span><span class="tag">BigQuery</span></div></article>
+          <article class="skill"><i class="ri-bar-chart-box-line" aria-hidden="true"></i><h3>Data Visualization &amp; BI</h3><div class="tags"><span class="tag">Power BI</span><span class="tag">Tableau</span><span class="tag">Looker Studio</span><span class="tag">Excel (Advanced)</span><span class="tag">Plotly</span></div></article>
+          <article class="skill"><i class="ri-brain-line" aria-hidden="true"></i><h3>Machine Learning &amp; AI</h3><div class="tags"><span class="tag">Scikit-learn</span><span class="tag">LSTM / CNN / GRU</span><span class="tag">RAG Chatbot</span><span class="tag">NLP</span><span class="tag">Computer Vision</span></div></article>
+          <article class="skill"><i class="ri-node-tree" aria-hidden="true"></i><h3>Tools &amp; Methods</h3><div class="tags"><span class="tag">Data Cleaning</span><span class="tag">Statistical Analysis</span><span class="tag">Feature Engineering</span><span class="tag">n8n</span><span class="tag">Microsoft Fabric</span></div></article>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <div class="eyebrow">02 / Professional experience</div><div class="section-head"><h2 id="experience-title">Learning from data.<br>Delivering real-world impact.</h2><p>Five internships connecting analytics, technology, and business decisions.</p></div>
+        <div class="experience-list reveal">
+          <details class="experience" open><summary><span class="company-icon" aria-hidden="true">BRI</span><div><h3>PT Asuransi BRI Life</h3><div class="job-role">Business Analyst Intern · Bancassurance Strategy Division</div></div><span class="job-date">Mar – Apr 2026</span><span class="expand" aria-hidden="true"></span></summary><div class="job-body"><ul><li>Managed and analyzed <strong>140K+ policyholder records</strong> to support premium monitoring and strategic decisions.</li><li>Built automated reports and interactive dashboards using Excel and Power BI.</li><li>Supported AMKKM, AMKKM+, and GEBYAR programs through operational analysis and performance reporting.</li></ul><div class="tags"><span class="tag">Power BI</span><span class="tag">Excel</span><span class="tag">Business analysis</span></div></div></details>
+          <details class="experience"><summary><span class="company-icon" aria-hidden="true">TC</span><div><h3>Technocolabs Softwares Inc.</h3><div class="job-role">Data Scientist Intern</div></div><span class="job-date">Sep – Nov 2025</span><span class="expand" aria-hidden="true"></span></summary><div class="job-body"><ul><li>Analyzed credit risk across <strong>179,235 P2P lending records</strong> from Bondora with 112 initial variables.</li><li>Addressed 26.27% missing data, removed 38 high-missingness features, and applied encoding and outlier treatment.</li><li>Applied correlation analysis and mutual information to select <strong>15 predictive variables</strong> for default prediction.</li></ul><div class="tags"><span class="tag">Python</span><span class="tag">Feature engineering</span><span class="tag">Credit risk</span></div></div></details>
+          <details class="experience"><summary><span class="company-icon" aria-hidden="true">TL</span><div><h3>PT Telkom Indonesia (Persero) Tbk</h3><div class="job-role">Data Scientist Intern · Digital Business &amp; Technology</div></div><span class="job-date">Feb – Jul 2025</span><span class="expand" aria-hidden="true"></span></summary><div class="job-body"><ul><li>Built a real-time pipeline and the third iteration of a Power BI dashboard to monitor <strong>110 Telkom talents</strong>.</li><li>Developed an n8n-integrated RAG chatbot for semantic search across <strong>800+ report pages</strong>.</li><li>Conducted 10+ AI research studies covering ML, NLP, Computer Vision, speech systems, and LLM evaluation.</li></ul><div class="tags"><span class="tag">RAG</span><span class="tag">n8n</span><span class="tag">Power BI</span><span class="tag">AI research</span></div></div></details>
+          <details class="experience"><summary><span class="company-icon" aria-hidden="true">GDI</span><div><h3>PT Global Data Inspirasi</h3><div class="job-role">Data Analyst Intern</div></div><span class="job-date">Dec 2024 – Feb 2025</span><span class="expand" aria-hidden="true"></span></summary><div class="job-body"><ul><li>Completed three analytics projects covering sales performance, consumer behavior, and hotel markets.</li><li>Built a Sales Superstore dashboard using approximately <strong>10,000 records and 21 attributes</strong> in Tableau.</li><li>Developed an American shopping patterns infographic and analyzed the ROBOTA hotel analytics platform.</li></ul><div class="tags"><span class="tag">Tableau</span><span class="tag">EDA</span><span class="tag">Data storytelling</span></div></div></details>
+          <details class="experience"><summary><span class="company-icon" aria-hidden="true">kd.</span><div><h3>Kudata.Id</h3><div class="job-role">Data Analyst Intern</div></div><span class="job-date">Dec 2024 – Jan 2025</span><span class="expand" aria-hidden="true"></span></summary><div class="job-body"><ul><li>Integrated four datasets covering <strong>1,000 users, 200 surveys, and 13,979 participants</strong>.</li><li>Built a Looker Studio dashboard with filters and drill-downs to monitor engagement and payments.</li><li>Identified a survey fulfillment rate of <strong>48.2%</strong>, 996 paid users, and 97.2% repeat participation.</li></ul><div class="tags"><span class="tag">Looker Studio</span><span class="tag">Data cleaning</span><span class="tag">Survey analytics</span></div></div></details>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="eyebrow">03 / Selected work</div><div class="section-head"><h2 id="projects-title">The right questions.<br><span class="accent">Data-driven solutions.</span></h2><p>From business intelligence to AI, explore a selection of projects I have worked on.</p></div>
+        <div class="filters" role="group" aria-label="Filter projects by category"><button class="filter" data-filter="all" aria-pressed="true">All projects</button><button class="filter" data-filter="bi" aria-pressed="false">Business Intelligence</button><button class="filter" data-filter="ai" aria-pressed="false">AI &amp; Data Science</button></div>
+        <p id="filter-status" class="skip" role="status" aria-live="polite"></p>
+        <div class="projects-grid">
+          <article class="project reveal" data-category="ai"><div class="project-visual" aria-hidden="true"><div class="mini-window"><div class="mini-title"><span>TALENTA / Knowledge assistant</span><i class="ri-sparkling-line"></i></div><div class="chat-line">Question → semantic search</div><div class="chat-line">Retrieval + reranking → contextual response</div></div><span class="visual-label">CONCEPT ILLUSTRATION</span></div><div class="project-content"><div class="project-category">01 / Enterprise AI · Telkom</div><h3>TALENTA — RAG Chatbot</h3><p>Conversational access to 800+ pages of corporate reports through semantic search and AI workflows.</p><div class="tags"><span class="tag">RAG</span><span class="tag">Semantic search</span><span class="tag">n8n</span></div><button class="project-link" data-project="talenta" aria-haspopup="dialog">Explore project <span aria-hidden="true">↗</span></button></div></article>
+          <article class="project reveal" data-category="bi"><div class="project-visual" aria-hidden="true"><div class="mini-window"><div class="mini-title"><span>Talent performance / Pipeline</span><i class="ri-bar-chart-grouped-line"></i></div><div class="mini-kpis"><span></span><span></span><span></span></div><div class="bars"><span style="--h:40%"></span><span style="--h:65%"></span><span style="--h:52%"></span><span style="--h:82%"></span><span style="--h:68%"></span><span style="--h:92%"></span><span style="--h:80%"></span></div></div><span class="visual-label">DASHBOARD ILLUSTRATION</span></div><div class="project-content"><div class="project-category">02 / Data pipeline · Telkom</div><h3>Real-Time Pipeline &amp; Power BI</h3><p>Automated data flows and a third-iteration dashboard for monitoring the KPIs of 110 Telkom talents.</p><div class="tags"><span class="tag">Power BI</span><span class="tag">Data pipeline</span><span class="tag">KPI</span></div><button class="project-link" data-project="pipeline" aria-haspopup="dialog">Explore project <span aria-hidden="true">↗</span></button></div></article>
+          <article class="project reveal" data-category="bi"><div class="project-visual" aria-hidden="true"><div class="network"><i class="ri-building-4-line"></i><b>→</b><i class="ri-pie-chart-2-line"></i><b>→</b><i class="ri-focus-3-line"></i></div><span class="visual-label">MONITORING ILLUSTRATION</span></div><div class="project-content"><div class="project-category">03 / Insurance · BRI Life</div><h3>AMKKM Program Dashboard</h3><p>Program monitoring across 400 branch offices and 4,994 operational units to support performance evaluation.</p><div class="tags"><span class="tag">Power BI</span><span class="tag">Business analysis</span></div><button class="project-link" data-project="amkkm" aria-haspopup="dialog">Explore project <span aria-hidden="true">↗</span></button></div></article>
+          <article class="project reveal" data-category="bi"><div class="project-visual" aria-hidden="true"><div class="donut"></div><span class="visual-label">SURVEY FULFILLMENT</span></div><div class="project-content"><div class="project-category">04 / Platform analytics · Kudata.Id</div><h3>Survey Performance Dashboard</h3><p>Four connected datasets to understand participation, fulfillment, and user activity.</p><div class="tags"><span class="tag">Looker Studio</span><span class="tag">Data analysis</span></div><button class="project-link" data-project="survey" aria-haspopup="dialog">Explore project <span aria-hidden="true">↗</span></button></div></article>
+          <article class="project reveal" data-category="ai"><div class="project-visual" aria-hidden="true"><div class="mini-window"><div class="mini-title"><span>Financial crisis / Early detection</span><i class="ri-pulse-line"></i></div><svg viewBox="0 0 220 70" style="display:block;width:100%;height:65px"><path d="M0 48L20 44L40 50L60 30L80 39L100 27L120 55L140 18L160 33L180 8L200 21L220 12" fill="none" stroke="#55bfff" stroke-width="2"/><path d="M0 55Q60 15 110 40T220 20" fill="none" stroke="#8784ff" stroke-width="2" stroke-dasharray="4 4"/></svg></div><span class="visual-label">MODEL ILLUSTRATION</span></div><div class="project-content"><div class="project-category">05 / Research · Undergraduate thesis</div><h3>Early Detection of Financial Crises</h3><p>Deep learning models for the early detection of financial crises in the Philippines.</p><div class="tags"><span class="tag">LSTM</span><span class="tag">CNN-LSTM</span><span class="tag">GRU</span></div><button class="project-link" data-project="thesis" aria-haspopup="dialog">Explore project <span aria-hidden="true">↗</span></button></div></article>
+        </div>
+        <p class="project-note">Visuals are concept illustrations. Open the project details to explore the scope and contributions.</p>
+      </div>
+    </section>
+    <section class="section" id="awards" aria-labelledby="awards-title">
+      <div class="container">
+        <div class="eyebrow">04 / Recognition</div><div class="section-head"><h2 id="awards-title">Analysis put to the test.<br>Achievements that matter.</h2><p>National recognition in data science, analytics, and data communication.</p></div>
+        <div class="awards-grid reveal">
+          <article class="award"><i class="ri-trophy-line" aria-hidden="true"></i><span class="year mono">2025</span><div class="place">3rd Place</div><h3>SPARK Telkomsel Datathon</h3><p>Bandung Institute of Technology (ITB)</p></article>
+          <article class="award"><i class="ri-presentation-line" aria-hidden="true"></i><span class="year mono">2025</span><div class="place">Best Presentation</div><h3>KIS ANAVA #19</h3><p>Gadjah Mada University (UGM)</p></article>
+          <article class="award"><i class="ri-medal-line" aria-hidden="true"></i><span class="year mono">2025</span><div class="place">2nd Place</div><h3>Data Mining Competition</h3><p>Trunojoyo University Madura (UTM)</p></article>
+          <article class="award"><i class="ri-medal-line" aria-hidden="true"></i><span class="year mono">2025</span><div class="place">2nd Place</div><h3>National Data Analytics Competition</h3><p>EPSILON · Padang State University</p></article>
+          <article class="award"><i class="ri-bar-chart-box-line" aria-hidden="true"></i><span class="year mono">2024</span><div class="place">3rd Place</div><h3>Tadulako Data Challenge</h3><p>Infographic Competition · Tadulako University</p></article>
+          <article class="award"><i class="ri-line-chart-line" aria-hidden="true"></i><span class="year mono">2025</span><div class="place">4th Place</div><h3>Statistics Dashboard Competition</h3><p>SSDC · Statistics Fair UNS</p></article>
+        </div>
+        <details class="more-awards"><summary>View 6 more achievements</summary><ul><li>Finalist · Estatics, GAMMAFEST, IPB (2025)</li><li>Finalist · Machine Learning Competition, IFEST 5.0, UMDP (2025)</li><li>Top 6 · Data Visualization, P!NGFEST, UNS (2025)</li><li>Top 10 · Data Analyst Competition, Find IT, UGM (2025)</li><li>5th Place · Infographic, Statistics Data Challenge, UNISBA (2025)</li><li>5th Place · Essay, SMATIC 6.0, UNJ (2025)</li></ul></details>
+      </div>
+    </section>
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div class="contact-copy"><div class="eyebrow">05 / Let's connect</div><h2 id="contact-title">Your data.<br><span class="accent">The next opportunity.</span></h2><p>Have an analytics challenge, a project idea, or a collaboration opportunity? Let’s start a conversation.</p><div class="contact-links"><a class="contact-link" href="mailto:satyabintang10@gmail.com"><i class="ri-mail-line" aria-hidden="true"></i><span><small>Email</small>satyabintang10@gmail.com</span></a><a class="contact-link" href="https://www.linkedin.com/in/satyaresiadi/" target="_blank" rel="noopener noreferrer"><i class="ri-linkedin-box-line" aria-hidden="true"></i><span><small>LinkedIn</small>linkedin.com/in/satyaresiadi ↗</span></a><a class="contact-link" href="https://github.com/Satbiest/" target="_blank" rel="noopener noreferrer"><i class="ri-github-line" aria-hidden="true"></i><span><small>GitHub</small>github.com/Satbiest ↗</span></a><button class="btn" id="copy-email" type="button" style="justify-self:start">Copy email <i class="ri-file-copy-line" aria-hidden="true"></i></button><span id="copy-status" role="status" style="font-size:11px;color:var(--accent)"></span></div></div>
+        <form class="contact-form" id="contact-form" action="mailto:satyabintang10@gmail.com" method="get">
+          <h3 style="font-size:19px;margin-bottom:23px">Start a conversation</h3>
+          <div class="form-row"><div class="field"><label for="name">Name</label><input id="name" name="name" placeholder="Your name" autocomplete="name" required maxlength="100"></div><div class="field"><label for="email">Email</label><input id="email" name="email" type="email" placeholder="you@email.com" autocomplete="email" required maxlength="150"></div></div>
+          <div class="field"><label for="subject">Subject</label><input id="subject" name="subject" placeholder="Collaboration / career opportunity" required maxlength="180"></div>
+          <div class="field"><label for="message">Message</label><textarea id="message" name="body" placeholder="Tell me about your needs or ideas…" required maxlength="2000"></textarea></div>
+          <button class="btn btn-primary" type="submit">Open email draft <i class="ri-arrow-right-up-line" aria-hidden="true"></i></button>
+          <p class="form-note">This form opens your email app. Review the draft and send it from there. You can also reach me directly using the email address provided.</p><p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer style="border-top:1px solid var(--line)"><div class="container footer-inner"><p>© <span id="year">2026</span> Satya Bintang Esa Resiadi. All rights reserved.</p><div class="socials"><a href="https://www.linkedin.com/in/satyaresiadi/" target="_blank" rel="noopener noreferrer" aria-label="Satya on LinkedIn"><i class="ri-linkedin-box-line" aria-hidden="true"></i></a><a href="https://github.com/Satbiest/" target="_blank" rel="noopener noreferrer" aria-label="Satya on GitHub"><i class="ri-github-line" aria-hidden="true"></i></a><a href="mailto:satyabintang10@gmail.com" aria-label="Email Satya"><i class="ri-mail-line" aria-hidden="true"></i></a></div><a class="back-top" href="#home">Back to top ↑</a></div></footer>
+  <dialog id="project-dialog" aria-labelledby="dialog-title"><div class="dialog-top"><span class="eyebrow">Project overview</span><button class="icon-btn" id="close-dialog" type="button" aria-label="Close project details">×</button></div><h2 id="dialog-title" class="dialog-title"></h2><div id="dialog-content" class="dialog-content"></div></dialog>
+  <script>
+    'use strict';
+    // Theme preferences are stored locally; blocked storage does not break the page.
+    const root = document.documentElement;
+    const themeToggle = document.getElementById('theme-toggle');
+    function syncTheme() {
+      const light = root.dataset.theme === 'light';
+      themeToggle.setAttribute('aria-label', light ? 'Switch to dark theme' : 'Switch to light theme');
+      themeToggle.innerHTML = '<i class="' + (light ? 'ri-moon-line' : 'ri-sun-line') + '" aria-hidden="true"></i>';
+      document.querySelector('meta[name="theme-color"]').content = light ? '#f6f8fc' : '#070b14';
+    }
+    syncTheme();
+    themeToggle.addEventListener('click', () => {
+      root.dataset.theme = root.dataset.theme === 'light' ? 'dark' : 'light';
+      try { localStorage.setItem('satya-theme', root.dataset.theme); } catch (_) {}
+      syncTheme();
+    });
+    // Mobile navigation closes after selection, Escape, or a click outside.
+    const menu = document.getElementById('nav-links');
+    const menuToggle = document.getElementById('menu-toggle');
+    function setMenu(open) {
+      menu.classList.toggle('is-open', open);
+      menuToggle.setAttribute('aria-expanded', String(open));
+      menuToggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    }
+    menuToggle.addEventListener('click', () => setMenu(menuToggle.getAttribute('aria-expanded') !== 'true'));
+    menu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => setMenu(false)));
+    document.addEventListener('click', event => { if (!event.target.closest('.navbar')) setMenu(false); });
+    document.addEventListener('keydown', event => { if (event.key === 'Escape' && menuToggle.getAttribute('aria-expanded') === 'true') { setMenu(false); menuToggle.focus(); } });
+    // IntersectionObserver is optional; content remains visible without JavaScript.
+    if ('IntersectionObserver' in window) {
+      if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        const revealObserver = new IntersectionObserver(entries => entries.forEach(entry => {
+          if (entry.isIntersecting) { entry.target.classList.add('visible'); revealObserver.unobserve(entry.target); }
+        }), { threshold: 0.08 });
+        document.querySelectorAll('.reveal').forEach(item => { item.classList.add('pending'); revealObserver.observe(item); });
+      }
+      const sectionObserver = new IntersectionObserver(entries => entries.forEach(entry => {
+        if (entry.isIntersecting) menu.querySelectorAll('a').forEach(link => {
+          if (link.hash === '#' + entry.target.id) link.setAttribute('aria-current', 'location');
+          else link.removeAttribute('aria-current');
+        });
+      }), { rootMargin: '-15% 0px -60% 0px', threshold: 0 });
+      document.querySelectorAll('main section[id]').forEach(section => sectionObserver.observe(section));
+    }
+    // Filters update the cards without navigation or server requests.
+    document.querySelectorAll('[data-filter]').forEach(button => button.addEventListener('click', () => {
+      document.querySelectorAll('[data-filter]').forEach(item => item.setAttribute('aria-pressed', String(item === button)));
+      let visible = 0;
+      document.querySelectorAll('[data-category]').forEach(card => {
+        card.hidden = button.dataset.filter !== 'all' && card.dataset.category !== button.dataset.filter;
+        if (!card.hidden) { visible++; card.classList.add('visible'); }
+      });
+      document.getElementById('filter-status').textContent = visible + ' projects displayed.';
+    }));
+    // Details contain resume information without claiming unreported model metrics.
+    const projects = {
+      talenta: { title: 'TALENTA — AI-Powered RAG Chatbot', intro: 'Telkom Annual Language Model Assistant: conversational access to corporate knowledge.', items: ['Processed 800+ pages of Telkom Indonesia’s 2024 corporate reports for contextual search and question answering.', 'Integrated semantic search, reranking, and workflow automation with n8n.', 'Enabled cross-document search to support enterprise stakeholders’ information needs.'], tools: 'RAG · Semantic search · Reranking · n8n' },
+      pipeline: { title: 'Real-Time Pipeline & Power BI', intro: 'Performance data automation and the third iteration of a Telkom talent monitoring dashboard.', items: ['Designed and implemented a real-time pipeline for the performance data of 110 talents.', 'Built a Power BI dashboard for KPI visualization and performance monitoring.', 'Aligned data flows with stakeholders’ strategic monitoring needs.'], tools: 'Data pipeline · Power BI · KPI monitoring' },
+      amkkm: { title: 'AMKKM Program BRI Life Dashboard', intro: 'An interactive dashboard for monitoring Bancassurance program performance.', items: ['Program monitoring scope: 400 branch offices and 4,994 operational units.', 'Analyzed premium achievement, customer participation, product distribution, and reward performance.', 'Supported AMKKM program evaluation, operational monitoring, and reporting.'], tools: 'Power BI · Data aggregation · Business intelligence' },
+      survey: { title: 'Survey Performance Dashboard', intro: 'An end-to-end analysis of survey engagement and performance at Kudata.Id.', items: ['Integrated four datasets: users, surveys, participation, and payments.', 'Covered 1,000 users, 200 surveys, and 13,979 participants.', 'Identified 48.2% fulfillment, 996 paid users, and 97.2% repeat participation.', 'Built a dashboard with dynamic filters and drill-downs in Google Looker Studio.'], tools: 'Looker Studio · Data cleaning · Data integration' },
+      thesis: { title: 'Early Detection of Financial Crises', intro: 'Undergraduate thesis in Statistics, Sebelas Maret University.', items: ['Investigated the early detection of financial crises in the Philippines using deep learning.', 'Used LSTM, Hybrid CNN-LSTM, and GRU models.', 'Focused on sequential modeling to understand data patterns in the context of financial crises.'], tools: 'Deep learning · LSTM · CNN-LSTM · GRU' }
+    };
+    const dialog = document.getElementById('project-dialog');
+    let lastProjectButton;
+    document.querySelectorAll('[data-project]').forEach(button => button.addEventListener('click', () => {
+      const project = projects[button.dataset.project];
+      lastProjectButton = button;
+      document.getElementById('dialog-title').textContent = project.title;
+      const content = document.getElementById('dialog-content');
+      content.replaceChildren();
+      const intro = document.createElement('p'); intro.textContent = project.intro;
+      const list = document.createElement('ul');
+      project.items.forEach(text => { const li = document.createElement('li'); li.textContent = text; list.append(li); });
+      const tools = document.createElement('p'); tools.className = 'accent'; tools.textContent = project.tools;
+      const foot = document.createElement('p'); foot.className = 'dialog-foot'; foot.textContent = 'Summary based on project experience. For further discussion, contact me by email or LinkedIn.';
+      content.append(intro, list, tools, foot);
+      dialog.showModal(); document.body.classList.add('modal-open');
+    }));
+    document.getElementById('close-dialog').addEventListener('click', () => dialog.close());
+    dialog.addEventListener('click', event => {
+      const rect = dialog.getBoundingClientRect();
+      if (event.target === dialog && (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom)) dialog.close();
+    });
+    dialog.addEventListener('close', () => { document.body.classList.remove('modal-open'); if (lastProjectButton) lastProjectButton.focus(); });
+    // GitHub Pages has no application backend: create a mailto draft without claiming delivery.
+    const form = document.getElementById('contact-form');
+    form.addEventListener('submit', event => {
+      event.preventDefault();
+      if (!form.reportValidity()) return;
+      const name = form.elements.namedItem('name').value.trim();
+      const email = form.elements.namedItem('email').value.trim();
+      const subject = form.elements.namedItem('subject').value.trim();
+      const message = form.elements.namedItem('body').value.trim();
+      if (!name || !subject || !message) { document.getElementById('form-status').textContent = 'Please enter a valid name, subject, and message.'; return; }
+      const body = 'Hi Satya,\n\n' + message + '\n\nBest regards,\n' + name + '\n' + email;
+      window.location.href = 'mailto:satyabintang10@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+      document.getElementById('form-status').textContent = 'Continue sending in your email app. If it does not open, copy the email address provided.';
+    });
+    document.getElementById('copy-email').addEventListener('click', async () => {
+      const status = document.getElementById('copy-status');
+      try { await navigator.clipboard.writeText('satyabintang10@gmail.com'); status.textContent = 'Email address copied.'; }
+      catch (_) { status.textContent = 'Copy manually: satyabintang10@gmail.com'; }
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <noscript><p class="container">JavaScript is disabled. All projects remain visible; download my CV or contact me using the email link.</p></noscript>
+</body>
+</html>
