@@ -15,7 +15,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
-  <!-- CSS and JavaScript are included in this file. Only the resume uses a local asset. -->
+  <!-- CSS and JavaScript are inline. Company logos and the resume are stored next to index.html. -->
   <script>
     try { if (localStorage.getItem('satya-theme') === 'light') document.documentElement.dataset.theme = 'light'; } catch (_) {}
   </script>
@@ -46,6 +46,42 @@
     @media(max-width:480px){.hero h1{font-size:43px;letter-spacing:-.06em}.roles{max-width:280px;margin:auto;line-height:1.8;gap:0 10px}.roles b:last-of-type{display:none}.roles span:last-child{width:100%}.hero-buttons .btn{padding:10px 15px}.hero-meta{flex-wrap:wrap;gap:6px 15px}.insight-body{grid-template-columns:1fr;gap:18px}.metric-list{flex-direction:row;gap:8px;padding-top:16px;border-top:1px solid var(--line)}.metric{display:block;border:0;padding:0;flex:1}.metric strong{font-size:22px;display:block}.metric span{display:block;text-align:left;font-size:8px;margin-top:3px;line-height:1.7}.chart-label{font-size:9px}.company-strip{font-size:12px;gap:16px 24px}.skills-grid{gap:12px 20px}.skill h3{font-size:13px}.skill .tag{font-size:10px;padding:3px 7px}.project,.project:first-child,.project:nth-child(2),.project:last-child{grid-column:span 6}.project-visual{height:155px}.awards-grid{grid-template-columns:1fr}.award{padding:23px}.award .place{margin-top:12px}.form-row{grid-template-columns:1fr;gap:0}.contact-form{padding:22px}.contact-link{font-size:12px}dialog{padding:24px}.dialog-title{font-size:24px}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}.reveal.pending{opacity:1;transform:none}}
     @media print{.navbar,.hero-buttons,.filters,.project-link,.contact-form,.back-top,.hero:after,.hero:before{display:none!important}body{--bg:#fff;--surface:#fff;--surface2:#f5f5f5;--text:#111;--muted:#444;--line:#ddd;--accent:#006b9b;background:#fff;color:#111}.hero{padding-top:30px}.section{padding:32px 0}.reveal.pending{opacity:1;transform:none}.project,.award{break-inside:avoid}.gradient{background:none;color:#111}}
+
+    /* Local company logos: preserve aspect ratios and use a white backdrop
+       so the original artwork remains readable in both color themes. */
+    .company-logo-frame {
+      background: #fff;
+      overflow: hidden;
+      padding: 3px;
+    }
+    .company-logo {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    .company-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .company-strip-logo {
+      display: block;
+      width: 44px;
+      height: 44px;
+      flex: 0 0 44px;
+      object-fit: contain;
+      padding: 3px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+    .company-badge .company-name {
+      max-width: 100px;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 1.4;
+    }
   </style>
 </head>
 <body>
@@ -69,7 +105,7 @@
         <h1 id="hero-title">Satya Bintang<br><span class="gradient">Esa Resiadi.</span></h1>
         <div class="roles"><span>Data Analyst</span><b aria-hidden="true">/</b><span>Data Scientist</span><b aria-hidden="true">/</b><span>Business Intelligence Specialist</span></div>
         <p class="hero-copy">Turning complex data into <span style="color:var(--text)">strategic insights</span> and meaningful business decisions.</p>
-        <div class="hero-buttons"><a class="btn btn-primary" href="#projects">View Projects <i class="ri-arrow-right-up-line" aria-hidden="true"></i></a><a class="btn" href="./assets/resume-satya.pdf" download="CV-Satya-Bintang-Esa-Resiadi.pdf">Download CV <i class="ri-download-2-line" aria-hidden="true"></i></a></div>
+        <div class="hero-buttons"><a class="btn btn-primary" href="#projects">View Projects <i class="ri-arrow-right-up-line" aria-hidden="true"></i></a><a class="btn" href="./resume-satya.pdf" download="CV-Satya-Bintang-Esa-Resiadi.pdf">Download CV <i class="ri-download-2-line" aria-hidden="true"></i></a></div>
         <div class="hero-meta"><span><i class="ri-map-pin-line" aria-hidden="true"></i>Demak, Indonesia</span><span><i class="ri-graduation-cap-line" aria-hidden="true"></i>Statistics graduate · UNS</span></div>
         <div class="insight" aria-label="Scope of work summarized from the resume">
           <div class="insight-top"><span class="window-dots" aria-hidden="true"><span></span><span></span><span></span></span><span class="mono">analytics / impact_overview</span><span>01 — 05</span></div>
@@ -86,7 +122,29 @@
             <div class="metric-list"><div class="metric"><strong>140K+</strong><span>Policyholder records analyzed<br>BRI Life</span></div><div class="metric"><strong>800+</strong><span>Report pages used for RAG<br>Telkom Indonesia</span></div><div class="metric"><strong>110</strong><span>Talents covered by KPI monitoring<br>Telkom Indonesia</span></div></div>
           </div>
         </div>
-        <div class="company-strip" aria-label="Organizations where I completed internships"><span>Experience with</span><span>BRI <em>Life</em></span><span>Telkom <em>Indonesia</em></span><span>Technocolabs</span><span>GDI</span><span>kudata.id</span></div>
+        <div class="company-strip" aria-label="Organizations where I completed internships">
+          <span>Experience with</span>
+          <span class="company-badge">
+            <img class="company-strip-logo" src="./brilife.png" alt="" width="44" height="44" loading="lazy" decoding="async">
+            <span class="company-name">BRI Life</span>
+          </span>
+          <span class="company-badge">
+            <img class="company-strip-logo" src="./telkom.png" alt="" width="44" height="44" loading="lazy" decoding="async">
+            <span class="company-name">Telkom Indonesia</span>
+          </span>
+          <span class="company-badge">
+            <img class="company-strip-logo" src="./technocolabs.jpeg" alt="" width="44" height="44" loading="lazy" decoding="async">
+            <span class="company-name">Technocolabs</span>
+          </span>
+          <span class="company-badge">
+            <img class="company-strip-logo" src="./datains.png" alt="" width="44" height="44" loading="lazy" decoding="async">
+            <span class="company-name">Global Data Inspirasi</span>
+          </span>
+          <span class="company-badge">
+            <img class="company-strip-logo" src="./kudata.id.png" alt="" width="44" height="44" loading="lazy" decoding="async">
+            <span class="company-name">Kudata.Id</span>
+          </span>
+        </div>
       </div>
     </section>
     <section class="section" id="about" aria-labelledby="about-title">
@@ -109,11 +167,11 @@
       <div class="container">
         <div class="eyebrow">02 / Professional experience</div><div class="section-head"><h2 id="experience-title">Learning from data.<br>Delivering real-world impact.</h2><p>Five internships connecting analytics, technology, and business decisions.</p></div>
         <div class="experience-list reveal">
-          <details class="experience" open><summary><span class="company-icon" aria-hidden="true">BRI</span><div><h3>PT Asuransi BRI Life</h3><div class="job-role">Business Analyst Intern · Bancassurance Strategy Division</div></div><span class="job-date">Mar – Apr 2026</span><span class="expand" aria-hidden="true"></span></summary><div class="job-body"><ul><li>Managed and analyzed <strong>140K+ policyholder records</strong> to support premium monitoring and strategic decisions.</li><li>Built automated reports and interactive dashboards using Excel and Power BI.</li><li>Supported AMKKM, AMKKM+, and GEBYAR programs through operational analysis and performance reporting.</li></ul><div class="tags"><span class="tag">Power BI</span><span class="tag">Excel</span><span class="tag">Business analysis</span></div></div></details>
-          <details class="experience"><summary><span class="company-icon" aria-hidden="true">TC</span><div><h3>Technocolabs Softwares Inc.</h3><div class="job-role">Data Scientist Intern</div></div><span class="job-date">Sep – Nov 2025</span><span class="expand" aria-hidden="true"></span></summary><div class="job-body"><ul><li>Analyzed credit risk across <strong>179,235 P2P lending records</strong> from Bondora with 112 initial variables.</li><li>Addressed 26.27% missing data, removed 38 high-missingness features, and applied encoding and outlier treatment.</li><li>Applied correlation analysis and mutual information to select <strong>15 predictive variables</strong> for default prediction.</li></ul><div class="tags"><span class="tag">Python</span><span class="tag">Feature engineering</span><span class="tag">Credit risk</span></div></div></details>
-          <details class="experience"><summary><span class="company-icon" aria-hidden="true">TL</span><div><h3>PT Telkom Indonesia (Persero) Tbk</h3><div class="job-role">Data Scientist Intern · Digital Business &amp; Technology</div></div><span class="job-date">Feb – Jul 2025</span><span class="expand" aria-hidden="true"></span></summary><div class="job-body"><ul><li>Built a real-time pipeline and the third iteration of a Power BI dashboard to monitor <strong>110 Telkom talents</strong>.</li><li>Developed an n8n-integrated RAG chatbot for semantic search across <strong>800+ report pages</strong>.</li><li>Conducted 10+ AI research studies covering ML, NLP, Computer Vision, speech systems, and LLM evaluation.</li></ul><div class="tags"><span class="tag">RAG</span><span class="tag">n8n</span><span class="tag">Power BI</span><span class="tag">AI research</span></div></div></details>
-          <details class="experience"><summary><span class="company-icon" aria-hidden="true">GDI</span><div><h3>PT Global Data Inspirasi</h3><div class="job-role">Data Analyst Intern</div></div><span class="job-date">Dec 2024 – Feb 2025</span><span class="expand" aria-hidden="true"></span></summary><div class="job-body"><ul><li>Completed three analytics projects covering sales performance, consumer behavior, and hotel markets.</li><li>Built a Sales Superstore dashboard using approximately <strong>10,000 records and 21 attributes</strong> in Tableau.</li><li>Developed an American shopping patterns infographic and analyzed the ROBOTA hotel analytics platform.</li></ul><div class="tags"><span class="tag">Tableau</span><span class="tag">EDA</span><span class="tag">Data storytelling</span></div></div></details>
-          <details class="experience"><summary><span class="company-icon" aria-hidden="true">kd.</span><div><h3>Kudata.Id</h3><div class="job-role">Data Analyst Intern</div></div><span class="job-date">Dec 2024 – Jan 2025</span><span class="expand" aria-hidden="true"></span></summary><div class="job-body"><ul><li>Integrated four datasets covering <strong>1,000 users, 200 surveys, and 13,979 participants</strong>.</li><li>Built a Looker Studio dashboard with filters and drill-downs to monitor engagement and payments.</li><li>Identified a survey fulfillment rate of <strong>48.2%</strong>, 996 paid users, and 97.2% repeat participation.</li></ul><div class="tags"><span class="tag">Looker Studio</span><span class="tag">Data cleaning</span><span class="tag">Survey analytics</span></div></div></details>
+          <details class="experience" open><summary><span class="company-icon company-logo-frame" aria-hidden="true"><img class="company-logo" src="./brilife.png" alt="" width="47" height="47" loading="lazy" decoding="async"></span><div><h3>PT Asuransi BRI Life</h3><div class="job-role">Business Analyst Intern · Bancassurance Strategy Division</div></div><span class="job-date">Mar – Apr 2026</span><span class="expand" aria-hidden="true"></span></summary><div class="job-body"><ul><li>Managed and analyzed <strong>140K+ policyholder records</strong> to support premium monitoring and strategic decisions.</li><li>Built automated reports and interactive dashboards using Excel and Power BI.</li><li>Supported AMKKM, AMKKM+, and GEBYAR programs through operational analysis and performance reporting.</li></ul><div class="tags"><span class="tag">Power BI</span><span class="tag">Excel</span><span class="tag">Business analysis</span></div></div></details>
+          <details class="experience"><summary><span class="company-icon company-logo-frame" aria-hidden="true"><img class="company-logo" src="./technocolabs.jpeg" alt="" width="47" height="47" loading="lazy" decoding="async"></span><div><h3>Technocolabs Softwares Inc.</h3><div class="job-role">Data Scientist Intern</div></div><span class="job-date">Sep – Nov 2025</span><span class="expand" aria-hidden="true"></span></summary><div class="job-body"><ul><li>Analyzed credit risk across <strong>179,235 P2P lending records</strong> from Bondora with 112 initial variables.</li><li>Addressed 26.27% missing data, removed 38 high-missingness features, and applied encoding and outlier treatment.</li><li>Applied correlation analysis and mutual information to select <strong>15 predictive variables</strong> for default prediction.</li></ul><div class="tags"><span class="tag">Python</span><span class="tag">Feature engineering</span><span class="tag">Credit risk</span></div></div></details>
+          <details class="experience"><summary><span class="company-icon company-logo-frame" aria-hidden="true"><img class="company-logo" src="./telkom.png" alt="" width="47" height="47" loading="lazy" decoding="async"></span><div><h3>PT Telkom Indonesia (Persero) Tbk</h3><div class="job-role">Data Scientist Intern · Digital Business &amp; Technology</div></div><span class="job-date">Feb – Jul 2025</span><span class="expand" aria-hidden="true"></span></summary><div class="job-body"><ul><li>Built a real-time pipeline and the third iteration of a Power BI dashboard to monitor <strong>110 Telkom talents</strong>.</li><li>Developed an n8n-integrated RAG chatbot for semantic search across <strong>800+ report pages</strong>.</li><li>Conducted 10+ AI research studies covering ML, NLP, Computer Vision, speech systems, and LLM evaluation.</li></ul><div class="tags"><span class="tag">RAG</span><span class="tag">n8n</span><span class="tag">Power BI</span><span class="tag">AI research</span></div></div></details>
+          <details class="experience"><summary><span class="company-icon company-logo-frame" aria-hidden="true"><img class="company-logo" src="./datains.png" alt="" width="47" height="47" loading="lazy" decoding="async"></span><div><h3>PT Global Data Inspirasi</h3><div class="job-role">Data Analyst Intern</div></div><span class="job-date">Dec 2024 – Feb 2025</span><span class="expand" aria-hidden="true"></span></summary><div class="job-body"><ul><li>Completed three analytics projects covering sales performance, consumer behavior, and hotel markets.</li><li>Built a Sales Superstore dashboard using approximately <strong>10,000 records and 21 attributes</strong> in Tableau.</li><li>Developed an American shopping patterns infographic and analyzed the ROBOTA hotel analytics platform.</li></ul><div class="tags"><span class="tag">Tableau</span><span class="tag">EDA</span><span class="tag">Data storytelling</span></div></div></details>
+          <details class="experience"><summary><span class="company-icon company-logo-frame" aria-hidden="true"><img class="company-logo" src="./kudata.id.png" alt="" width="47" height="47" loading="lazy" decoding="async"></span><div><h3>Kudata.Id</h3><div class="job-role">Data Analyst Intern</div></div><span class="job-date">Dec 2024 – Jan 2025</span><span class="expand" aria-hidden="true"></span></summary><div class="job-body"><ul><li>Integrated four datasets covering <strong>1,000 users, 200 surveys, and 13,979 participants</strong>.</li><li>Built a Looker Studio dashboard with filters and drill-downs to monitor engagement and payments.</li><li>Identified a survey fulfillment rate of <strong>48.2%</strong>, 996 paid users, and 97.2% repeat participation.</li></ul><div class="tags"><span class="tag">Looker Studio</span><span class="tag">Data cleaning</span><span class="tag">Survey analytics</span></div></div></details>
         </div>
       </div>
     </section>
