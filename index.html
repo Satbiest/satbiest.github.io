@@ -132,12 +132,9 @@ a:hover { color: var(--accent); }
 .hero-meta i { margin-right: 4px; color: var(--accent); }
 .company-heading { display: flex; justify-content: center; align-items: center; gap: 10px; margin: 55px 0 20px; }
 .company-label { display: block; color: var(--muted); font-size: 10px; text-transform: uppercase; letter-spacing: .15em; opacity: .65; }
-.company-motion-toggle { display: grid; place-items: center; width: 28px; height: 28px; border: 1px solid var(--line); border-radius: 50%; background: var(--surface); color: var(--muted); font-size: 13px; }
-.company-motion-toggle:hover { color: var(--text); border-color: var(--accent); }
 .company-marquee { overflow: hidden; padding-block: 5px; mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent); }
 .company-track { --company-gap: 34px; display: flex; width: max-content; min-width: 200%; animation: companySlide 28s linear infinite; }
 .company-strip { display: flex; flex: 1 0 auto; justify-content: space-around; align-items: center; gap: var(--company-gap); padding-right: var(--company-gap); }
-.company-marquee:hover .company-track, .company-marquee:focus-within .company-track, .company-marquee.is-paused .company-track { animation-play-state: paused; }
 /* Two identical groups make the reset invisible at the end of each loop. */
 @keyframes companySlide { to { transform: translateX(-50%); } }
 .company-badge { display: inline-flex; flex: 0 0 auto; align-items: center; gap: 9px; text-align: left; opacity: .62; transition: opacity .2s; }
@@ -587,7 +584,6 @@ dialog::backdrop { background: #01040bd6; backdrop-filter: blur(8px); }
   }
 }
 @media print, (prefers-reduced-motion: reduce) {
-  .company-motion-toggle { display: none; }
   .company-marquee { overflow: visible; mask-image: none; }
   .company-track { width: 100%; min-width: 0; animation: none !important; transform: none; }
   .company-strip { flex: 1 1 auto; flex-wrap: wrap; justify-content: center; padding-right: 0; gap: 21px 25px; }
@@ -633,7 +629,6 @@ dialog::backdrop { background: #01040bd6; backdrop-filter: blur(8px); }
         <div class="hero-meta"><span><i class="ri-map-pin-line" aria-hidden="true"></i>Demak, Indonesia</span><span><i class="ri-graduation-cap-line" aria-hidden="true"></i>Statistics · Sebelas Maret University</span></div>
         <div class="company-heading">
           <span class="company-label" id="company-heading">Experience across industries</span>
-          <button class="company-motion-toggle" id="company-motion-toggle" type="button" aria-label="Pause company animation" aria-pressed="false" aria-controls="company-track" hidden><i class="ri-pause-line" aria-hidden="true"></i></button>
         </div>
         <div class="company-marquee" role="region" aria-labelledby="company-heading">
           <div class="company-track" id="company-track">
@@ -973,19 +968,6 @@ dialog::backdrop { background: #01040bd6; backdrop-filter: blur(8px); }
     // Motion enhancements: preserve the static page when motion is reduced.
     (() => {
       const motionPreference = matchMedia('(prefers-reduced-motion: reduce)');
-
-      // Visitors can pause the company marquee independently of other motion.
-      const companyMarquee = document.querySelector('.company-marquee');
-      const companyToggle = document.getElementById('company-motion-toggle');
-      function syncCompanyMotionControl() { companyToggle.hidden = motionPreference.matches; }
-      syncCompanyMotionControl();
-      motionPreference.addEventListener('change', syncCompanyMotionControl);
-      companyToggle.addEventListener('click', () => {
-        const paused = companyMarquee.classList.toggle('is-paused');
-        companyToggle.setAttribute('aria-pressed', String(paused));
-        companyToggle.setAttribute('aria-label', paused ? 'Resume company animation' : 'Pause company animation');
-        companyToggle.innerHTML = '<i class="' + (paused ? 'ri-play-line' : 'ri-pause-line') + '" aria-hidden="true"></i>';
-      });
 
       // Stagger neighboring cards; the existing IntersectionObserver reveals them.
       document.querySelectorAll('.expertise-grid, .impact-grid, .awards-grid').forEach(grid => {
