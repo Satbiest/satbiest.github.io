@@ -230,6 +230,9 @@ a:hover { color: var(--accent); }
 .project-link { display: inline-flex; align-items: center; justify-content: space-between; gap: 23px; padding: 0 0 6px; border-bottom: 1px solid var(--line); color: var(--text); background: transparent; font-size: 12px; }
 .project-link:hover { color: var(--accent); border-color: var(--accent); }
 .project-link span { color: var(--accent); font-size: 17px; }
+.project-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 14px 20px; }
+.project-details { padding: 0 0 6px; color: var(--muted); background: transparent; border-bottom: 1px solid transparent; font-size: 12px; }
+.project-details:hover { color: var(--accent); border-color: var(--accent); }
 .project-note { text-align: center; color: var(--muted); font-size: 10px; margin: 26px 0 0; }
 .preview-window { position: relative; width: 100%; max-width: 430px; padding: 18px; background: var(--bg); border: 1px solid var(--line); border-radius: 11px; box-shadow: 0 22px 50px #0003; }
 .preview-top { display: flex; align-items: center; justify-content: space-between; color: var(--muted); font-size: 9px; padding-bottom: 14px; border-bottom: 1px solid var(--line); margin-bottom: 15px; }
@@ -786,15 +789,34 @@ dialog::backdrop { background: #01040bd6; backdrop-filter: blur(8px); }
             <div class="project-content"><span class="project-category">Insurance Analytics · BRI Life</span><h3>AMKKM Program Dashboard</h3><p>An interactive view of program performance across branches and operational units, covering premium achievement, customer participation, product distribution, and rewards.</p>
               <div class="project-metrics"><div><strong>400</strong><span>Branch offices</span></div><div><strong>4,994</strong><span>Operational units</span></div></div>
               <div class="tags"><span class="tag">Power BI</span><span class="tag">Business analysis</span><span class="tag">Program reporting</span></div>
-              <button class="project-link" data-project="amkkm" aria-haspopup="dialog">Explore Project <span aria-hidden="true">↗</span></button>
+              <div class="project-actions">
+                <a class="project-link" href="https://github.com/Satbiest/brilife" target="_blank" rel="noopener noreferrer" aria-label="View AMKKM Program Dashboard on GitHub">View on GitHub <span aria-hidden="true">↗</span></a>
+                <button class="project-details" data-project="amkkm" aria-haspopup="dialog" aria-label="AMKKM Program Dashboard details">Project Details</button>
+              </div>
+            </div>
+          </article>
+          <article class="project reveal" data-category="bi">
+            <div class="project-visual" aria-hidden="true"><div class="preview-window"><div class="preview-top"><span>Sales Superstore / Performance</span><i class="ri-shopping-bag-3-line"></i></div><div class="preview-kpis"><div class="preview-kpi"><strong>Sales</strong><span>Revenue performance</span></div><div class="preview-kpi"><strong>Profit</strong><span>Profitability</span></div><div class="preview-kpi"><strong>Orders</strong><span>Order volume</span></div></div><div class="preview-bars"><span style="--h:40%"></span><span style="--h:65%"></span><span style="--h:51%"></span><span style="--h:80%"></span><span style="--h:67%"></span><span style="--h:94%"></span></div><div class="preview-legend"><span>Illustrative chart</span><span>Sales &amp; profit trends</span></div><div class="pipeline-track"><span>Customers</span><span>Products</span><span>Regions</span></div></div><span class="visual-label">Illustrative project preview</span></div>
+            <div class="project-content"><span class="project-category">Sales Analytics · Global Data Inspirasi</span><h3>Sales Superstore Performance Dashboard</h3><p>An interactive Tableau dashboard connecting sales, profitability, customer segments, product performance, regional distribution, and shipping operations to support business decisions.</p>
+              <div class="project-metrics"><div><strong>3</strong><span>Customer segments</span></div><div><strong>4</strong><span>Sales regions</span></div></div>
+              <div class="tags"><span class="tag">Tableau</span><span class="tag">Sales analytics</span><span class="tag">Data visualization</span></div>
+              <div class="project-actions">
+                <a class="project-link" href="https://github.com/Satbiest/datains" target="_blank" rel="noopener noreferrer" aria-label="View Sales Superstore Performance Dashboard on GitHub">View on GitHub <span aria-hidden="true">↗</span></a>
+                <a class="project-link" href="https://public.tableau.com/views/SalesSuperstorePerformanceDashboard_17908247274610/Dashboard3?:language=en-US&amp;:sid=&amp;:redirect=auth&amp;:display_count=n&amp;:origin=viz_share_link" target="_blank" rel="noopener noreferrer" aria-label="Open Sales Superstore live dashboard in Tableau Public">Live Dashboard <span aria-hidden="true">↗</span></a>
+                <button class="project-details" data-project="superstore" aria-haspopup="dialog" aria-label="Sales Superstore Performance Dashboard details">Project Details</button>
+              </div>
             </div>
           </article>
           <article class="project reveal" data-category="bi">
             <div class="project-visual" aria-hidden="true"><div class="preview-window"><div class="preview-top"><span>Survey performance / Engagement</span><i class="ri-donut-chart-line"></i></div><div class="survey-preview"><div><div class="donut"></div><div class="preview-legend" style="justify-content:center">Survey fulfillment</div></div><div class="survey-list"><span>Users <b>1,000</b></span><span>Surveys <b>200</b></span><span>Participants <b>13,979</b></span><span>Repeat participation <b>97.2%</b></span></div></div><div class="pipeline-track"><span>Users</span><span>Surveys</span><span>Payments</span></div></div><span class="visual-label">Illustrative project preview</span></div>
-            <div class="project-content"><span class="project-category">Platform Analytics · Kudata.Id</span><h3>Survey Performance Dashboard</h3><p>Four connected datasets brought together in Looker Studio to understand engagement, survey fulfillment, user activity, and payment performance.</p>
+            <div class="project-content"><span class="project-category">Platform Analytics · Kudata.Id</span><h3>Survey Platform Analytics Dashboard</h3><p>Four connected datasets brought together in Looker Studio to understand engagement, survey fulfillment, user activity, and payment performance.</p>
               <div class="project-metrics"><div><strong>1,000</strong><span>Users analyzed</span></div><div><strong>200</strong><span>Surveys covered</span></div></div>
               <div class="tags"><span class="tag">Looker Studio</span><span class="tag">Data integration</span><span class="tag">Survey analytics</span></div>
-              <button class="project-link" data-project="survey" aria-haspopup="dialog">Explore Project <span aria-hidden="true">↗</span></button>
+              <div class="project-actions">
+                <a class="project-link" href="https://github.com/Satbiest/kudata" target="_blank" rel="noopener noreferrer" aria-label="View Survey Platform Analytics Dashboard on GitHub">View on GitHub <span aria-hidden="true">↗</span></a>
+                <a class="project-link" href="https://datastudio.google.com/reporting/67cab36d-2b68-43e3-bb4b-7e5c5bcfb1e0" target="_blank" rel="noopener noreferrer" aria-label="Open Survey Platform live dashboard in Looker Studio">Live Dashboard <span aria-hidden="true">↗</span></a>
+                <button class="project-details" data-project="survey" aria-haspopup="dialog" aria-label="Survey Platform Analytics Dashboard details">Project Details</button>
+              </div>
             </div>
           </article>
           <article class="project reveal" data-category="ai">
@@ -913,12 +935,13 @@ dialog::backdrop { background: #01040bd6; backdrop-filter: blur(8px); }
       });
       document.getElementById('filter-status').textContent = visible + ' projects displayed.';
     }));
-    // Details contain resume information without claiming unreported model metrics.
+    // Details summarize the resume and the owner's public project repositories.
     const projects = {
       talenta: { title: 'TALENTA — AI-Powered RAG Chatbot', intro: 'Telkom Annual Language Model Assistant: conversational access to corporate knowledge.', items: ['Processed 800+ pages of Telkom Indonesia’s 2024 corporate reports for contextual search and question answering.', 'Integrated semantic search, reranking, and workflow automation with n8n.', 'Enabled cross-document search to support enterprise stakeholders’ information needs.'], tools: 'RAG · Semantic search · Reranking · n8n' },
       pipeline: { title: 'Real-Time Pipeline & Power BI', intro: 'Performance data automation and the third iteration of a Telkom talent monitoring dashboard.', items: ['Designed and implemented a real-time pipeline for the performance data of 110 talents.', 'Built a Power BI dashboard for KPI visualization and performance monitoring.', 'Aligned data flows with stakeholders’ strategic monitoring needs.'], tools: 'Data pipeline · Power BI · KPI monitoring' },
-      amkkm: { title: 'AMKKM Program BRI Life Dashboard', intro: 'An interactive dashboard for monitoring Bancassurance program performance.', items: ['Program monitoring scope: 400 branch offices and 4,994 operational units.', 'Analyzed premium achievement, customer participation, product distribution, and reward performance.', 'Supported AMKKM program evaluation, operational monitoring, and reporting.'], tools: 'Power BI · Data aggregation · Business intelligence' },
-      survey: { title: 'Survey Performance Dashboard', intro: 'An end-to-end analysis of survey engagement and performance at Kudata.Id.', items: ['Integrated four datasets: users, surveys, participation, and payments.', 'Covered 1,000 users, 200 surveys, and 13,979 participants.', 'Identified 48.2% fulfillment, 996 paid users, and 97.2% repeat participation.', 'Built a dashboard with dynamic filters and drill-downs in Google Looker Studio.'], tools: 'Looker Studio · Data cleaning · Data integration' },
+      amkkm: { title: 'AMKKM Program Dashboard', intro: 'An interactive dashboard for monitoring Bancassurance program performance.', items: ['Program monitoring scope: 400 branch offices and 4,994 operational units.', 'Analyzed premium achievement, customer participation, product distribution, and reward performance.', 'Supported AMKKM program evaluation, operational monitoring, and reporting.'], tools: 'Power BI · Data aggregation · Business intelligence', repository: 'https://github.com/Satbiest/brilife' },
+      superstore: { title: 'Sales Superstore Performance Dashboard', intro: 'An interactive Tableau dashboard developed during my Data Analyst Internship at PT Global Data Inspirasi (DataIns).', items: ['Monitors sales, profit, order volume, quantity, and profit margin.', 'Compares Consumer, Corporate, and Home Office customer segments across West, East, Central, and South sales regions.', 'Explores product sub-categories, geographic sales distribution, shipping modes, and monthly sales and profit trends.', 'Provides interactive filters for segment, product category, and year.'], tools: 'Tableau · Tableau Public · Sales analytics · Data visualization', repository: 'https://github.com/Satbiest/datains', dashboard: 'https://public.tableau.com/views/SalesSuperstorePerformanceDashboard_17908247274610/Dashboard3?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link' },
+      survey: { title: 'Survey Platform Analytics Dashboard', intro: 'An end-to-end analysis of survey engagement and performance at Kudata.Id.', items: ['Integrated four datasets: users, surveys, participation, and payments.', 'Covered 1,000 users, 200 surveys, and 13,979 participants.', 'Identified 48.2% fulfillment, 996 paid users, and 97.2% repeat participation.', 'Built a dashboard with dynamic filters and drill-downs in Google Looker Studio.'], tools: 'Looker Studio · Data cleaning · Data integration', repository: 'https://github.com/Satbiest/kudata', dashboard: 'https://datastudio.google.com/reporting/67cab36d-2b68-43e3-bb4b-7e5c5bcfb1e0' },
       thesis: { title: 'Early Detection of Financial Crises', intro: 'Undergraduate thesis in Statistics, Sebelas Maret University.', items: ['Investigated the early detection of financial crises in the Philippines using deep learning.', 'Used LSTM, Hybrid CNN-LSTM, and GRU models.', 'Focused on sequential modeling to understand data patterns in the context of financial crises.'], tools: 'Deep learning · LSTM · CNN-LSTM · GRU' }
     };
     const dialog = document.getElementById('project-dialog');
@@ -935,6 +958,15 @@ dialog::backdrop { background: #01040bd6; backdrop-filter: blur(8px); }
       const tools = document.createElement('p'); tools.className = 'accent'; tools.textContent = project.tools;
       const foot = document.createElement('p'); foot.className = 'dialog-foot'; foot.textContent = 'Summary based on project experience. For further discussion, contact me by email or LinkedIn.';
       content.append(intro, list, tools, foot);
+      if (project.repository) {
+        const actions = document.createElement('div'); actions.className = 'project-actions';
+        [['View on GitHub', project.repository], ['Live Dashboard', project.dashboard]].forEach(([label, url]) => {
+          if (!url) return;
+          const link = document.createElement('a'); link.className = 'btn'; link.textContent = label + ' ↗';
+          link.href = url; link.target = '_blank'; link.rel = 'noopener noreferrer'; actions.append(link);
+        });
+        content.append(actions);
+      }
       dialog.showModal(); document.body.classList.add('modal-open');
     }));
     document.getElementById('close-dialog').addEventListener('click', () => dialog.close());
